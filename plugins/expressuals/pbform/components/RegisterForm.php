@@ -1,7 +1,7 @@
 <?php namespace Expressuals\Pbform\Components;
 
 use Cms\Classes\ComponentBase;
-use Expressuals\Pbform\Models\LGA;
+use Expressuals\Pbform\Models\Lga as LGA;
 use Expressuals\Pbform\Models\BusinessArea;
 use Expressuals\Pbform\Models\Industry;
 use Expressuals\Pbform\Models\LoanPurpose;
