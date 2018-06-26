@@ -1,0 +1,10 @@
+name: LGA
+form: $/expressuals/pbform/models/lga/fields.yaml
+modelClass: Expressuals\Pbform\Models\Lga
+defaultRedirect: expressuals/pbform/lga
+create:
+    redirect: 'expressuals/pbform/lga/update/:id'
+    redirectClose: expressuals/pbform/lga
+update:
+    redirect: expressuals/pbform/lga
+    redirectClose: expressuals/pbform/lga

@@ -1,0 +1,5 @@
+fields:
+    lga:
+        label: LGA
+        span: auto
+        type: text

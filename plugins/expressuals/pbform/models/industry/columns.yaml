@@ -1,0 +1,5 @@
+columns:
+    industry:
+        label: Industry
+        type: text
+        searchable: true

@@ -1,0 +1,4 @@
+title: Industry
+modelClass: Expressuals\Pbform\Models\Industry
+toolbar:
+    buttons: reorder_toolbar

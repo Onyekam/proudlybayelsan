@@ -1,0 +1,28 @@
+plugin:
+    name: 'expressuals.pbform::lang.plugin.name'
+    description: 'expressuals.pbform::lang.plugin.description'
+    author: expressuals
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Registration Forms'
+        url: expressuals/pbform/registrationform
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item:
+                label: 'Area of Business'
+                url: expressuals/pbform/businessarea
+                icon: icon-sitemap
+            side-menu-item2:
+                label: Industry
+                url: expressuals/pbform/industry
+                icon: icon-sitemap
+            side-menu-item3:
+                label: LGA
+                url: expressuals/pbform/lga
+                icon: icon-sitemap
+            side-menu-item4:
+                label: 'Purpose of Loan'
+                url: expressuals/pbform/loanpurpose
+                icon: icon-sitemap

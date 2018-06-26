@@ -1,0 +1,12 @@
+list: $/expressuals/pbform/models/industry/columns.yaml
+modelClass: Expressuals\Pbform\Models\Industry
+title: Industry
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'expressuals/pbform/industry/update/:id'

@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table expressuals_pbform_register'
+    - builder_table_create_expressuals_pbform_register.php
+1.0.3:
+    - 'Updated table expressuals_pbform_register'
+    - builder_table_update_expressuals_pbform_register.php
+1.0.4:
+    - 'Created table expressuals_pbform_area_of_business'
+    - builder_table_create_expressuals_pbform_area_of_business.php
+1.0.5:
+    - 'Created table expressuals_pbform_industry'
+    - builder_table_create_expressuals_pbform_industry.php
+1.0.6:
+    - 'Created table expressuals_pbform_lga'
+    - builder_table_create_expressuals_pbform_lga.php
+1.0.7:
+    - 'Created table expressuals_pbform_loan_purposes'
+    - builder_table_create_expressuals_pbform_loan_purposes.php
+1.0.8:
+    - 'Created table expressuals_pbform_pr'
+    - builder_table_create_expressuals_pbform_pr.php
+1.0.9:
+    - 'Updated table expressuals_pbform_register'
+    - builder_table_update_expressuals_pbform_register_2.php

@@ -1,0 +1,56 @@
+body, p{
+    font-size:13px;
+}
+
+.bar .logo {
+    max-height: 3em;
+}
+
+footer .logo {
+    max-height: 3em;
+}
+
+.type--fine-print {
+    font-size: 1em;
+}
+
+section,
+footer {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+footer .type--fine-print:not(p) {
+    opacity: 1;
+}
+
+.menu-horizontal>li:not(:hover)>a,
+.menu-horizontal>li:not(:hover)>span,
+.menu-horizontal>li:not(:hover)>.modal-instance>.modal-trigger {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.registerForm > div {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+    display: inline-block !important;
+    float: left !important;
+    clear: none;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 3%;
+    float: left;
+    padding-left: 0px;
+    margin-right: 20px;
+    margin-top: -15px;
+    
+    
+    
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+   display: ruby-text-container;
+}

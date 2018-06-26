@@ -1,0 +1,5 @@
+columns:
+    area_of_business:
+        label: 'Area of Business'
+        type: text
+        searchable: true

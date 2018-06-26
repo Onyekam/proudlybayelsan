@@ -1,0 +1,4 @@
+title: BusinessArea
+modelClass: Expressuals\Pbform\Models\BusinessArea
+toolbar:
+    buttons: reorder_toolbar

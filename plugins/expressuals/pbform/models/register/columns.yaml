@@ -1,0 +1,12 @@
+columns:
+    surname:
+        label: Surname
+        type: text
+        searchable: true
+    other_names:
+        label: 'Other Names'
+        type: text
+        searchable: true
+    gender:
+        label: Gender
+        type: text

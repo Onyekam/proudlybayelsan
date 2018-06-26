@@ -1,0 +1,5 @@
+fields:
+    area_of_business:
+        label: 'Area of Business'
+        span: auto
+        type: text

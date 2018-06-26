@@ -1,0 +1,10 @@
+name: Industry
+form: $/expressuals/pbform/models/industry/fields.yaml
+modelClass: Expressuals\Pbform\Models\Industry
+defaultRedirect: expressuals/pbform/industry
+create:
+    redirect: 'expressuals/pbform/industry/update/:id'
+    redirectClose: expressuals/pbform/industry
+update:
+    redirect: expressuals/pbform/industry
+    redirectClose: expressuals/pbform/industry

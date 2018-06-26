@@ -1,0 +1,5 @@
+columns:
+    lga:
+        label: LGA
+        type: text
+        searchable: true

@@ -1,0 +1,10 @@
+name: LoanPurpose
+form: $/expressuals/pbform/models/loanpurpose/fields.yaml
+modelClass: Expressuals\Pbform\Models\LoanPurpose
+defaultRedirect: expressuals/pbform/loanpurpose
+create:
+    redirect: 'expressuals/pbform/loanpurpose/update/:id'
+    redirectClose: expressuals/pbform/loanpurpose
+update:
+    redirect: expressuals/pbform/loanpurpose
+    redirectClose: expressuals/pbform/loanpurpose

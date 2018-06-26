@@ -1,0 +1,10 @@
+name: RegistrationForm
+form: $/expressuals/pbform/models/register/fields.yaml
+modelClass: Expressuals\Pbform\Models\Register
+defaultRedirect: expressuals/pbform/registrationform
+create:
+    redirect: 'expressuals/pbform/registrationform/update/:id'
+    redirectClose: expressuals/pbform/registrationform
+update:
+    redirect: expressuals/pbform/registrationform
+    redirectClose: expressuals/pbform/registrationform

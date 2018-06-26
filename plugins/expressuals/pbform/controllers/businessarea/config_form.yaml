@@ -1,0 +1,10 @@
+name: BusinessArea
+form: $/expressuals/pbform/models/businessarea/fields.yaml
+modelClass: Expressuals\Pbform\Models\BusinessArea
+defaultRedirect: expressuals/pbform/businessarea
+create:
+    redirect: 'expressuals/pbform/businessarea/update/:id'
+    redirectClose: expressuals/pbform/businessarea
+update:
+    redirect: expressuals/pbform/businessarea
+    redirectClose: expressuals/pbform/businessarea

@@ -1,0 +1,5 @@
+fields:
+    industry:
+        label: Industry
+        span: auto
+        type: text

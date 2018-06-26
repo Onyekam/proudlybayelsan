@@ -1,0 +1,5 @@
+columns:
+    purpose_of_loan:
+        label: 'Purpose of Loan'
+        type: text
+        searchable: true

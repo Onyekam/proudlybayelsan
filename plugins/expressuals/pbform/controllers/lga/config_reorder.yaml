@@ -1,0 +1,4 @@
+title: LGA
+modelClass: Expressuals\Pbform\Models\Lga
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,5 @@
+fields:
+    purpose_of_loan:
+        label: 'Purpose of Loan'
+        span: auto
+        type: text
