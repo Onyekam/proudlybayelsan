@@ -54,3 +54,51 @@ input[type=checkbox] + label,
 input[type=radio] + label {
    display: ruby-text-container;
 }
+.feature > i, h4 {
+    color: #fff !important;
+}
+
+.farming{
+   background:url('../img/proudlybayelsan-03.png') !important;
+   background-repeat:no-repeat !important;
+   background-size: cover !important; 
+}
+
+.leathergoods {
+    background: url('../img/proudlybayelsan-04.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.catering {
+    background: url('../img/proudlybayelsan-05.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.carpentry {
+    background: url('../img/proudlybayelsan-06.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.elec {
+    background: url('../img/proudlybayelsan-07.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.fashion {
+    background: url('../img/proudlybayelsan-08.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.intdesign {
+    background: url('../img/proudlybayelsan-09.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.hairbeauty {
+    background: url('../img/proudlybayelsan-10.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
