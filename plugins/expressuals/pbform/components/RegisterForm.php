@@ -99,8 +99,8 @@ class RegisterForm extends ComponentBase
     }); 
     //$vars2 = ['surname' => $surname, 'name' => $name, 'email' =>$email, ]
     Mail::later(5,'expressuals.pbform::mail.newregistration', $vars, function($message) {
-        $message->to($this->email, $this->name);
-        $message->subject('Bayelsa Entrepreneur\'s Youth Network Registration');
+        $message->to('proudlybayelsan@gmail.com', 'Registration Form');
+        $message->subject('A new user registered to the Network');
     }); 
 		
 	//	\Flash::success('Your invitation(s) have been sent to your friend(s)');
