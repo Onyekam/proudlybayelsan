@@ -8,10 +8,14 @@ use Expressuals\Pbform\Models\LoanPurpose;
 use Expressuals\Pbform\Models\Register;
 use Illuminate\Support\Facades\Input;
 use Rainlab\User\Models\User;
+use ValidationException;
+use ApplicationException;
+use Validator;
 use Auth;
 use DB;
 use Redirect;
 use Flash;
+use Mail;
 
 class RegisterForm extends ComponentBase
 {
@@ -48,27 +52,34 @@ class RegisterForm extends ComponentBase
 {
   //return post('Register[surname]');
     //return ['error' => \Expressuals\Pbform\Models\Register::create(post('Register'))];
+    $data = post();
     $register = new Register;
-    $register->fill(post());
-    $register->surname = post('surname');
-    $register->other_names =  post('other_names');
-    $register->gender = post('gender');
-    $register->email = post('email');
-    $register->address = post('address');
-    $register->telephone = post('telephone'); 
-    $register->lga_id = post('lga_id');
-    $register->area_business_id = post('area_business_id'); 
-    $register->industry_id = post('industry_id');
-    $register->registered = post('registered');
-    $register->existed = post('existed');
-    $register->business_description = post('business_description');
-    $register->save();
-    foreach (post('purposes') as $purpose) {
-      DB::statement('insert into expressuals_pbform_pr  (expressuals_pbform_pr.register_id, expressuals_pbform_pr.loan_purpose_id  ) values('.$purpose.','.$register->id.')');
+    $rules = $register->rules;
+    $validation = Validator::make($data, $rules);
+    if ($validation->fails()) {
+        throw new ValidationException($validation);
+    } else {
+      $register->fill(post());
+      $register->surname = post('surname');
+      $register->other_names =  post('other_names');
+      $register->gender = post('gender');
+      $register->email = post('email');
+      $register->address = post('address');
+      $register->telephone = post('telephone'); 
+      $register->lga_id = post('lga_id');
+      $register->area_business_id = post('area_business_id'); 
+      $register->industry_id = post('industry_id');
+      $register->registered = post('registered');
+      $register->existed = post('existed');
+      $register->business_description = post('business_description');
+      $register->save();
+      foreach (post('purposes') as $purpose) {
+        DB::statement('insert into expressuals_pbform_pr  (expressuals_pbform_pr.register_id, expressuals_pbform_pr.loan_purpose_id  ) values('.$purpose.','.$register->id.')');
+      }
+      Flash::success('Registration successfully completed');
+      $this->dispatchMails($register->surname, $register->other_names, $register->email);
+      return Redirect::refresh();
     }
-    Flash::success('Registration successfully completed');
-    return Redirect::refresh();
-
 }
 
   public function setDefaults(){
@@ -80,13 +91,15 @@ class RegisterForm extends ComponentBase
 
   public function dispatchMails($surname, $name, $email){
     $vars = ['surname' => $surname, 'othername' => $name, 'email' =>$email];
-    Mail::send('expressuals.pbform::mail.registrationconfirmation', $vars, function($message) {
-        $message->to($name, $email);
+    $this->name = $name;
+    $this->email = $email;
+    Mail::later(5,'expressuals.pbform::mail.registrationconfirmation', $vars, function($message) {
+        $message->to($this->email, $this->name);
         $message->subject('Bayelsa Entrepreneur\'s Youth Network Registration');
     }); 
     //$vars2 = ['surname' => $surname, 'name' => $name, 'email' =>$email, ]
-    Mail::send('expressuals.pbform::mail.newregistration', $vars, function($message) {
-        $message->to($name, $email);
+    Mail::later(5,'expressuals.pbform::mail.newregistration', $vars, function($message) {
+        $message->to($this->email, $this->name);
         $message->subject('Bayelsa Entrepreneur\'s Youth Network Registration');
     }); 
 		
@@ -98,4 +111,6 @@ class RegisterForm extends ComponentBase
   public $businessAreas;
   public $industries;
   public $loanPurposes;
+  public $name;
+  public $email;
 }

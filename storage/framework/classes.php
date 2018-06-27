@@ -81,4 +81,5 @@
   'cms\\Controllers\\themes' => 'modules/cms/controllers/themes.php',
   'Expressuals\\Pbform\\Models\\LoanPurpose' => 'plugins/expressuals/pbform/models/LoanPurpose.php',
   'expressuals\\pbform\\Controllers\\loanpurpose' => 'plugins/expressuals/pbform/controllers/loanpurpose.php',
+  'RainLab\\User\\Models\\MailBlocker' => 'plugins/rainlab/user/models/MailBlocker.php',
 );
