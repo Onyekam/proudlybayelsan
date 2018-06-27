@@ -6,6 +6,9 @@ use Expressuals\Pbform\Models\BusinessArea;
 use Expressuals\Pbform\Models\Industry;
 use Expressuals\Pbform\Models\LoanPurpose;
 use Expressuals\Pbform\Models\Register;
+use Illuminate\Support\Facades\Input;
+use Rainlab\User\Models\User;
+use Auth;
 use DB;
 use Redirect;
 use Flash;
@@ -74,6 +77,23 @@ class RegisterForm extends ComponentBase
     $this->industries = Industry::all();
     $this->loanPurposes = LoanPurpose::all();
   }
+
+  public function dispatchMails($surname, $name, $email){
+    $vars = ['surname' => $surname, 'othername' => $name, 'email' =>$email];
+    Mail::send('expressuals.pbform::mail.registrationconfirmation', $vars, function($message) {
+        $message->to($name, $email);
+        $message->subject('Bayelsa Entrepreneur\'s Youth Network Registration');
+    }); 
+    //$vars2 = ['surname' => $surname, 'name' => $name, 'email' =>$email, ]
+    Mail::send('expressuals.pbform::mail.newregistration', $vars, function($message) {
+        $message->to($name, $email);
+        $message->subject('Bayelsa Entrepreneur\'s Youth Network Registration');
+    }); 
+		
+	//	\Flash::success('Your invitation(s) have been sent to your friend(s)');
+  //    return Redirect::refresh();
+  }
+
   public $LGAs;
   public $businessAreas;
   public $industries;

@@ -62,43 +62,116 @@ input[type=radio] + label {
    background:url('../img/proudlybayelsan-03.png') !important;
    background-repeat:no-repeat !important;
    background-size: cover !important; 
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+}
+
+.farming:hover{
+    background: url('../img/proudlybayelsan-03.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .leathergoods {
     background: url('../img/proudlybayelsan-04.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.leathergoods:hover {
+    background: url('../img/proudlybayelsan-04.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 .catering {
     background: url('../img/proudlybayelsan-05.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.catering:hover {
+    background: url('../img/proudlybayelsan-05.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 .carpentry {
     background: url('../img/proudlybayelsan-06.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.carpentry:hover {
+    background: url('../img/proudlybayelsan-06.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 .elec {
     background: url('../img/proudlybayelsan-07.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.elec:hover {
+    background: url('../img/proudlybayelsan-07.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .fashion {
     background: url('../img/proudlybayelsan-08.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.fashion:hover {
+    background: url('../img/proudlybayelsan-08.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .intdesign {
     background: url('../img/proudlybayelsan-09.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.intdesign:hover {
+    background: url('../img/proudlybayelsan-09.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .hairbeauty {
     background: url('../img/proudlybayelsan-10.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.hairbeauty:hover {
+    background: url('../img/proudlybayelsan-10.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
